@@ -2,7 +2,7 @@ import java.util.Locale;
 
 public class CeasarCipherBrute {
     public static void main(String args[]){
-        String Input = "ABYU PU OVTLDVYR VU ISHJRIVHYK";
+        String Input = "ILSSV UOLYL";
         Input = Input.toUpperCase();
         char[] inputCharArray = Input.toCharArray();
         int offset = 0;
