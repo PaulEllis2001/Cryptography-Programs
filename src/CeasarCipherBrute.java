@@ -22,13 +22,16 @@ public class CeasarCipherBrute {
         //Lower Case 97-122
         if(out == ' ')
         {
+            //Leave Spaces Alone
             return out;
-        } else if ((out + offset) > 90) {
+        } else{
+            //Add the offset
             out += offset;
-            out -= 26;
+            //If it loops set back to beginning
+            if((out > 90)) {
+                out -= 26;
+            }
             return out;
-        } else {
-            return (char)(out+offset);
         }
     }
 }
