@@ -1,22 +1,21 @@
-import java.util.Locale;
 import java.util.Scanner;
 
 public class CeasarCipherBrute {
-    public static void main(String args[]){
+    public static void main(String[] args){
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Please enter the message you would like to decrypt: ");
         String Input = keyboard.nextLine();
         Input = Input.toUpperCase();
 
         char[] inputCharArray = Input.toCharArray();
-        int offset = 0;
 
         for(int i = 0; i < 26; i++){
             StringBuilder output = new StringBuilder();
             for(char cur : inputCharArray){
                 output.append(AddOffset(cur, i));
             }
-            System.out.println("Offset: "+ i + " Message: \""+ output.toString() + "\"");
+            String out = output.toString();
+            System.out.println("Offset: "+ i + " Message: \""+ out + "\"");
         }
     }
 

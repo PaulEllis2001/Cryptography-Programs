@@ -1,8 +1,7 @@
-import java.util.Locale;
 import java.util.Scanner;
 
 public class CeasarCipherEncrypt {
-    public static void main(String args[]){
+    public static void main(String[] args){
 
         //Get the input
         Scanner keyboard = new Scanner(System.in);
@@ -12,8 +11,8 @@ public class CeasarCipherEncrypt {
         int offset = keyboard.nextInt();
         keyboard.close();
 
-        //Format thte input to be UPPER CASE and send to char array
-        input.toUpperCase();
+        //Format the input to be UPPER CASE and send to char array
+        input = input.toUpperCase();
         char[] inputChar = input.toCharArray();
 
         //Create String Builder to store output in
@@ -26,7 +25,8 @@ public class CeasarCipherEncrypt {
         }
 
         //Print out encrypted message
-        System.out.println("Encrypted Message: " + output.toString());
+        String out = output.toString();
+        System.out.println("Encrypted Message: " + out);
     }
 
     /**
@@ -54,5 +54,6 @@ public class CeasarCipherEncrypt {
             }
             return out;
         }
+
     }
 }
