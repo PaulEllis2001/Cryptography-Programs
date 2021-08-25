@@ -1,9 +1,13 @@
 import java.util.Locale;
+import java.util.Scanner;
 
 public class CeasarCipherBrute {
     public static void main(String args[]){
-        String Input = "ILSSV UOLYL";
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Please enter the message you would like to decrypt: ");
+        String Input = keyboard.nextLine();
         Input = Input.toUpperCase();
+
         char[] inputCharArray = Input.toCharArray();
         int offset = 0;
 
