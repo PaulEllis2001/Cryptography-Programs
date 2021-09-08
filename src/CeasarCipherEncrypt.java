@@ -1,3 +1,9 @@
+/*
+* Author: Paul Ellis
+* Date: August 30, 2021
+* Description: A program to encrypt messages using Ceasar ciphers
+*           Using the Java Programing language
+ */
 import java.util.Scanner;
 
 public class CeasarCipherEncrypt {
